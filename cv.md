@@ -13,3 +13,10 @@ Over time, switched to the development of websites under the control of CMS (Joo
 
 Currently, I’m expanding my knowledge as a front-end developer.
 
+## Skills
+- SEO
+- Photoshop
+- HTML&CSS
+- Git
+- Figma
+- JS
