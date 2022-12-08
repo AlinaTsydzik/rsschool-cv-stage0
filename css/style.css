@@ -1,4 +1,172 @@
+
+
+:root {
+    --first-color-bg: #ffffff;
+    --second-color-bg: #f7f7f7;
+    --main-color-ac: #6b0f10;
+
+}
+
+
 body {
-    padding: 0;
-    margin: 0;
+    background: var(--second-color-bg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color-ac);
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--main-color-ac);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+header {
+    display: flex;
+    background-color: var(--first-color-bg);
+}
+
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu li{
+    display: inline-block;
+    
+}
+
+.menu li::after {
+    content: "|";
+    color: var (--main-color-ac);
+}
+
+.menu li:last-child::after{
+    content:"";
+}
+
+.menu a{
+    padding: 0 20px;
+}
+
+header::before {
+    content:'';
+    width: 290px;
+    height: 280px;
+    background-color: var(--second-color-bg);
+    position: absolute;
+    border-radius: 0 50% 50% 0;
+    display: block;
+    z-index: 1;
+    left: 0;
+}
+
+.photo {
+    z-index: 2;
+    position: relative;
+    top: 15px;
+}
+
+.name {
+    margin: 20px auto;
+}
+
+.leftside {
+    width: 30%;
+    padding:0 20px;
+}
+
+.rightside {
+    width: 70%;
+    padding:0 20px;
+}
+
+.section-title {
+    width: 220px;
+    background: var(--second-color-bg);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 3px 20px;
+}
+
+.descr{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-list{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 3;
+}
+
+
+.fa {
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+.photo img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.rsschool img {
+    width: 100px;
+}
+
+footer{
+    display: flex;
+}
+
+.year {
+    width: 33%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.githublink {
+    width: 33%;
+    text-align: center;
+}
+
+.rsschool {
+    width: 33%;
+    text-align: right;
+}
+
+.project-example {
+    width: 45%;
+}
+
+.project-example img {
+max-width: 300px;
 }
