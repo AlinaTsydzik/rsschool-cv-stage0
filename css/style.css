@@ -7,6 +7,9 @@
 
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 
 body {
     background: var(--second-color-bg);
@@ -28,6 +31,7 @@ h1 {
 }
 
 h2 {
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -40,13 +44,20 @@ h2 {
     background: #ffffff;
 }
 
+section {
+    margin-bottom: 30px;
+}
+
 header {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--first-color-bg);
 }
 
 main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -90,20 +101,30 @@ header::before {
     z-index: 2;
     position: relative;
     top: 15px;
+    margin-right: 20px;
+    max-width: 35%;
+    min-width: 300px;
 }
 
 .name {
     margin: 20px auto;
+    max-width: 65%;
 }
 
 .leftside {
-    width: 30%;
+    max-width: 35%;
+    min-width: 300px;
     padding:0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start
 }
 
 .rightside {
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
     padding:0 20px;
+    max-width: 65%;
 }
 
 .section-title {
@@ -144,29 +165,54 @@ header::before {
 
 footer{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .year {
-    width: 33%;
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
+    padding: 10px 10px 10px 30px;
+
 }
 
 .githublink {
-    width: 33%;
     text-align: center;
+    padding: 20px;
 }
 
 .rsschool {
-    width: 33%;
     text-align: right;
+    padding: 20px;
 }
 
+.skills {
+    width: 100%;
+}
+
+.code {
+    width: 100%;
+}
+
+.projects-section-title {
+    width: 100%;
+}
+
+.projects-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
 .project-example {
-    width: 45%;
+    width: 49%;
+    background: var(--second-color-bg);
+    border-radius: 15px;
+    text-align: center;
 }
 
 .project-example img {
-max-width: 300px;
+    max-width: 95%;
 }
+
