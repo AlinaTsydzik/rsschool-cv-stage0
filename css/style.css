@@ -1,0 +1,241 @@
+
+
+:root {
+    --first-color-bg: #ffffff;
+    --second-color-bg: #f7f7f7;
+    --main-color-ac: #6b0f10;
+
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--second-color-bg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color-ac);
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--main-color-ac);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--first-color-bg);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu li{
+    display: inline-block;
+    
+}
+
+.menu li::after {
+    content: "|";
+    color: var (--main-color-ac);
+}
+
+.menu li:last-child::after{
+    content:"";
+}
+
+.menu a{
+    padding: 0 20px;
+}
+
+header::before {
+    content:'';
+    width: 290px;
+    height: 280px;
+    background-color: var(--second-color-bg);
+    position: absolute;
+    border-radius: 0 50% 50% 0;
+    display: block;
+    z-index: 1;
+    left: 0;
+}
+
+.photo {
+    z-index: 2;
+    position: relative;
+    top: 15px;
+    margin-right: 20px;
+    max-width: 35%;
+    min-width: 300px;
+}
+
+.name {
+    margin: 20px auto;
+    max-width: 65%;
+}
+
+.leftside {
+    max-width: 35%;
+    min-width: 300px;
+    padding:0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.rightside {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 20px;
+    max-width: 65%;
+}
+
+.section-title {
+    width: 220px;
+    background: var(--second-color-bg);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 3px 20px;
+}
+
+.descr{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-list{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 3;
+}
+
+
+.fa {
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+.photo img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.rsschool img {
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.year {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 10px 10px 30px;
+
+}
+
+.githublink {
+    text-align: center;
+    padding: 20px;
+}
+
+.rsschool {
+    text-align: right;
+    padding: 20px;
+}
+
+.skills {
+    width: 100%;
+}
+
+.code {
+    width: 100%;
+}
+
+.projects-section-title {
+    width: 100%;
+}
+
+.projects-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.project-example {
+    width: 49%;
+    background: var(--second-color-bg);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.project-example img {
+    max-width: 95%;
+}
+
+@media screen and (max-width: 870px) {
+    .leftside {
+        width: 100%;
+        max-width: 100%;
+    }
+   
+    .rightside {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 555px) {
+    .project-example {
+        width: 100%;
+        border-radius: 15px;
+    }   
+  }
