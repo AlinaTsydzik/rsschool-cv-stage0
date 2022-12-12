@@ -1,12 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Alina Tsydzik</title>
 </head>
 <body>
-    <p>CV html+css</p>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+
+
+            </ul>
+        </nav>
+
+        <header>
+            <div class="photo">
+                <img src="images/photo.jpg" alt="Alina Tsydzik">
+            </div>
+            <div class="name">
+                <h1>Alina Tsydzik</h1>
+                <p class="descr">Front-End Developer</p>
+            </div>
+                
+        </header>
+
+        <main>
+            <div class="leftside">
+                <section class="contacts" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="contact-list">
+                    <li class="phone"><i class="fa fa-regular fa-phone"></i>+48 889-509-214</li>
+                    <li class="email"><i class="fa fa-regular fa-envelope"></i><a href="mailto:pronevich.alina@gmail.com" title="Email" target="_blank">pronevich.alina@gmail.com</a></li>
+                    <li class="github"><i class="fa fa-brands fa-github"></i><a href="https://github.com/AlinaTsydzik" title="Github" target="_blank">AlinaTsydzik</a></li>
+                    <li class="telegram"><i class="fa fa-brands fa-telegram"></i><a href="https://t.me/AlinaTsydzik" title="Telegram" target="_blank">AlinaTsydzik</a></li>
+                    </ul>
+                </section>
+
+                <section class="education" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <p>Belarusian State Technological University Department of Information Systems and Technologies 2006-2011</p>
+                </section>
+         
+                <section class="language" id="language">
+                    <h2 class="section-title">Language</h2>
+                    <ul>
+                         <li>Russian - Native</li>
+                         <li>Belarusian - Intermediate</li>
+                         <li>Polish - B1</li>
+                         <li>English - A2</li>
+                    </ul>
+                </section>
+             </div>
+
+            <div class="rightside">
+                <section class="about" id="about">
+                    <h2 class="section-title">About me</h2>
+                    <p>I started my career as an SEO specialist in 2011. Gradually expanded my knowledge and skills in other areas of working with websites (writing texts, creating and editing graphic information, simple video clips). Over time, switched to the development of websites under the control of CMS (Joomla, WP, OpenCart).</p>
+                    <p>Currently, I&#x60;m expanding my knowledge as a front-end developer.</p>
+                </section>
+
+                <section class="skills" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul>
+                        <li>SEO</li>
+                        <li>Photoshop</li>
+                        <li>HTML&CSS</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                        <li>JS</li>
+                    </ul>
+                </section>
+                
+                <section class="code">
+                <div>
+                  <h2 class="section-title">Code Example</h2>
+                  <code>
+                    var a;<br>
+                    var b;<br>
+
+                    function multiply(a, b){<br>
+                        return a * b;<br>
+                    }
+                  </code>
+                </div>
+                </section>
+
+                <section class="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-all">
+                        <div class="project-example">
+                             <a href="http://termopaneli.by" title="Termopaneli.by" target="_blank"><img src="images/projects/primer1-termopaneli.png" alt="Project 1"></a>
+                            <h3><a href="http://termopaneli.by" title="Termopaneli.by" target="_blank">Termopaneli.by</a></h3>
+                        </div>
+                        <div class="project-example">
+                            <a href="https://allmax.by" title="Allmax.by" target="_blank"><img src="images/projects/primer2-allmax.png" alt="Project 2"></a>
+                            <h3><a href="https://allmax.by" title="Allmax.by" target="_blank">Allmax.by</a></h3>
+                        </div>
+                        <div class="project-example">
+                            <a href="http://expertbankrot.by" title="Expertbankrot.by" target="_blank"><img src="images/projects/primer4-expertbankrot.png" alt="Project 3"></a>
+                            <h3><a href="http://expertbankrot.by" title="Expertbankrot.by" target="_blank">Expertbankrot.by</a></h3>
+                        </div>
+                        <div  class="project-example">
+                            <a href="http://sunrolls.by" title="Sunrolls.by" target="_blank"><img src="images/projects/primer7-sunrolls.png" alt="Project 4"></a>
+                            <h3><a href="http://sunrolls.by" title="Sunrolls.by" target="_blank">Sunrolls.by</a></h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+
+         </main>
+        <footer>
+            <div class="year">
+                <p>2022</p>
+            </div>
+            <div class="githublink">
+                <p><a href="https://github.com/AlinaTsydzik" target="_blank"><span class="fa fa-github"></span></a> <a href="https://github.com/AlinaTsydzik" target="_blank">Github</a></p>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js/" target="_blank"><img src="images/rs_school_js.svg" alt="RS School"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
